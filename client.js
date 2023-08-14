@@ -1,5 +1,15 @@
 // ��������� ��������� �������� �������
-
+function createArea(tag, color, enablev, enablet, name, name2) {
+  var areaView = AreaViewService.GetContext().Get(name);
+  areaView.Color = color;
+  areaView.Tags = tag;
+  areaView.Enable = enablev;
+  var areaTrigger = AreaPlayerTriggerService.Get(name2 || "ok");
+  areaTrigger.Tags = tag;
+  areaTrigger.Enable = enablet;
+}
+createArea(["пест"], {b: 3000}, true, true, "aView"); с этим
+});
 Damage.GetContext().DamageOut.Value = GameMode.Parameters.GetBool("Damage");
 BreackGraph.OnlyPlayerBlocksDmg = GameMode.Parameters.GetBool("PartialDesruction");
 BreackGraph.WeakBlocks = GameMode.Parameters.GetBool("LoosenBlocks");
