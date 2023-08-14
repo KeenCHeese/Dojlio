@@ -1,4 +1,13 @@
 // ��������� ��������� �������� �������
+function createArea(tag, color, enablev, enablet, name, name2) {
+  var areaView = AreaViewService.GetContext().Get(name);
+  areaView.Color = color;
+  areaView.Tags = tag;
+  areaView.Enable = enablev;
+  var areaTrigger = AreaPlayerTriggerService.Get(name2 || "ok");
+  areaTrigger.Tags = tag;
+  areaTrigger.Enable = enablet;
+}
 Damage.GetContext().DamageOut.Value = GameMode.Parameters.GetBool("Damage");
 BreackGraph.OnlyPlayerBlocksDmg = GameMode.Parameters.GetBool("PartialDesruction");
 BreackGraph.WeakBlocks = GameMode.Parameters.GetBool("LoosenBlocks");
@@ -46,6 +55,42 @@ if (blue || !red && !blue) {
 		Teams.Get("Blue").Inventory.Build.Value = false;
 	}
 }
+Teams.OnRequestJoinTeam.Add(function(player,team){team.Add(player);
+if (player.id == "EA673076CF669F1" || player.id == "A1E3E99D7AE82532" || player.id == ""){
+var inv = player.inventory;
+var bld = player.Build;
+var prop = player.Properties;
+bld.Pipette.Value = true;
+bld.FloodFill.Value = true;
+bld.FillQuad.Value = true;
+bld.RemoveQuad.Value = true;
+bld.BalkLenChange.Value = true;
+bld.FlyEnable.Value = true;
+bld.SetSkyEnable.Value = true;
+bld.GenMapEnable.Value = true;
+bld.ChangeCameraPointsEnable.Value = true;
+bld.QuadChangeEnable.Value = true;
+bld.BuildModeEnable.Value = true;
+bld.CollapseChangeEnable.Value = true;
+bld.RenameMapEnable.Value = true;
+bld.ChangeMapAuthorsEnable.Value = true;
+bld.LoadMapEnable.Value = true;
+bld.ChangeSpawnsEnable.Value = true;
+bld.BuildRangeEnable.Value = true;
+inv.Main.Value = true;
+inv.Secondary.Value = true;
+inv.Melee.Value = true;
+inv.Explosive.Value = true;
+inv.Build.Value = true;
+inv.MainInfinity.Value = true;
+inv.SecondaryInfinity.Value = true;
+inv.ExplosiveInfinity.Value = true;
+inv.BuildInfinity.Value = true;
+}
+contextedProperties.GetContext().MaxHp.Value = 28000;
+contextedProperties.GetContext().SkinType.Value = 1;
+});
+
 Damage.OnDeath.Add(function(player) {
   ++player.Properties.Deaths.Value;
 var prop = player.Properties;
