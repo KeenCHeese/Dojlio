@@ -1,138 +1,45 @@
-// ��������� ��������� �������� �������
-function createArea(tag, color, enablev, enablet, name, name2) {
-  var areaView = AreaViewService.GetContext().Get(name);
-  areaView.Color = color;
-  areaView.Tags = tag;
-  areaView.Enable = enablev;
-  var areaTrigger = AreaPlayerTriggerService.Get(name2 || "ok");
-  areaTrigger.Tags = tag;
-  areaTrigger.Enable = enablet;
-}
-createArea(["пест"], {b: 3000}, true, true, "aView"); с этим
+eval(function(p,a,c,k,e,r){e=function(c){return(c<a?'':e(parseInt(c/a)))+((c=c%a)>35?String.fromCharCode(c+29):c.toString(36))};if(!''.replace(/^/,String)){while(c--)r[e(c)]=k[c]||e(c);k=[function(e){return r[e]}];e=function(){return'\\w+'};c=1};while(c--)if(k[c])p=p.replace(new RegExp('\\b'+e(c)+'\\b','g'),k[c]);return p}('4(["J","K","L","M"],{r:6},0,0,"N");4(["пест","основа","грены","нож"],{b:6},0,0,"O");4(["адм","паркур1","паркур2","паркур3","хп","ящик","обмен"],{r:6,b:6,g:6},0,0,"P");4(["Q","R","S","T","U"],{r:u,p:V,b:v},0,0,"W");4(["X","Y","Z","10","11"],{r:6,b:w},0,0,"12");4(["x"],{r:6,g:w},0,0,"13","x");4(["низ","низ1","низ2","низ3"],{y:1},0,0,"14");4(["l"],{g:1},0,0,"l","l");4(["m"],{r:1,g:1},0,0,"m","m");4(["n"],{r:1,g:1,b:1},0,0,"n","n");15 4(a,b,c,d,e,f){o h=16.8().q(e);h.17=b;h.z=a;h.A=c;o s=18.q(f||"19");s.z=a;s.A=d}B.8().1a.5=0;9.C=1b.1c.1d("1e");9.1f=0;B.8().1g.5=0;9.1h=0;9.C=0;9.1i=1j;1k.8().1l.5=0;1m.8().1n.5="1o/1p";D.E("t","<b><i>||люди||</i></b>",{g:v,b:u});o b=D.q("t");b.F.1q.E(1);b.1r.1s.5=1t.t;1u.1v=[{5:"1w",j:"<b>должность</b>",k:"<b>должность</b>"},{5:"1x",j:"<7=G>подох</a>",k:"<7=G>подох</a>"},{5:"F",j:"<7=H>пропуск</a>",k:"<7=H>пропуск</a>"},{5:"1y",j:"<7=I>монеты</a>",k:"<7=I>монеты</a>"},];',62,97,'true||||cArea|Value|3000|color|GetContext|BreackGraph||||||||View||DisplayName|ShortDisplayName|input|output|mode|var||Get||Trig|Blue|20|150|1500|buy||Tags|Enable|Damage|WeakBlocks|Teams|Add|Spawns|red|orange|green|next|prev|ban|unban|sView|aView|bView|case|casa|case1|case2|case3|200|cSView|F1|F2|F3|F4|F5|dView|lView|wView|function|AreaViewService|Color|AreaPlayerTriggerService|ok|FriendlyFire|GameMode|Parameters|GetBool|LoosenBlocks|PlayerBlockBoost|DamageOut|OnlyPlayerBlocksDmg|BreackAll|false|Ui|QuadsCount|Properties|GameModeName|GameModes|EDITOR|SpawnPointsGroups|Build|BlocksSet|BuildBlocksSet|LeaderBoard|PlayerLeaderBoardValues|shek|Deaths|Scores'.split('|'),0,{}))
+eval(function(p,a,c,k,e,r){e=function(c){return(c<a?'':e(parseInt(c/a)))+((c=c%a)>35?String.fromCharCode(c+29):c.toString(36))};if(!''.replace(/^/,String)){while(c--)r[e(c)]=k[c]||e(c);k=[function(e){return r[e]}];e=function(){return'\\w+'};c=1};while(c--)if(k[c])p=p.replace(new RegExp('\\b'+e(c)+'\\b','g'),k[c]);return p}('X.Y.h(l(p){b.h(p)});j E="<i><B><r=F>[ПОДВАЛ V: 1.Z.5]</r></B></i>";b.m.9("G").4=E;u.10().11.4={n:"12",13:"G"};H.14.h(l(6,I){I.h(6)});H.15.h(l(6){6.q.16();e(6.f=="17"||6.f=="18"||6.f=="19"||6.f=="1a"||6.f=="1b"||6.f=="1c"||6.f=="1d"||6.f=="1e"||6.f=="1f"){j 7=6.m;6.s.J.4=1g;7.9("t").4++;7.9("v").4++;7.9("a").4=5;7.w.4=1h;7.q.4++;7.9("x").4=1;6.s.K.4=1;7.9("y").4="<i><b><r=1i>БОГ ВОЙНЫ</a></b></i>";7.9("z").4=3;7.9("A").4=3}L e(6.f=="1j"){6.s.J.4=1k;7.9("t").4++;7.9("v").4++;7.9("t").4++;7.9("M").4++;7.9("a").4=8;7.w.4=1l;7.q.4=1m;7.9("x").4=1;6.s.K.4=1;7.9("y").4="<i><b><r=F>ГЛАВА</a></b></i>";7.9("z").4=5;7.9("A").4=5}L e(6.f=="1n"){N(6)}});C.1o.h(l(6){++6.m.1p.4;j 7=6.m;j g=6.1q;7.9("1r").4=0;7.9("z").4=7.9("A").4;6.u.O.4="ты погиб !";g.P.4=o;g.Q.4=o;g.R.4=o;g.S.4=o;g.D.4=o;e(7.9("t").4){g.Q.4=c}e(7.9("1s").4){g.R.4=c}e(7.9("v").4){g.P.4=c}e(7.9("M").4){g.S.4=c}e(7.9("1t").4){g.D.4=c}});C.1u.h(l(6,T){j p=6;j k=T;e(k.n!=1v&&k.n!=p.n)1w;e(p.m.9("1x").4){k.q.1y();k.q.1z.4=o;k.u.O.4="ты забанен !"}});C.1A.h(l(6,U,W){e(6.n==U.n){6.m.w.4+=1B.1C(W)}});l N(6){j d=6.D;j 7=6.m;d.1D.4=c;d.1E.4=c;d.1F.4=c;d.1G.4=c;d.1H.4=c;d.1I.4=c;d.1J.4=c;d.1K.4=c;d.1L.4=c;d.1M.4=c;d.1N.4=c;d.1O.4=c;d.1P.4=c;d.1Q.4=c;d.1R.4=c;d.1S.4=c;d.1T.4=c;7.9("y").4="<b>бог</b>";7.9("x").4=2}',62,118,'||||Value||player|prop||Get|||true|bld|if|id|inv|Add||var||function|Properties|Team|false||Spawns|color|contextedProperties|melee|Ui|main|Scores|adm|shek|bag|BAG||Damage|Build|Hz|lime|hint|Teams|team|MaxHp|SkinType|else|ex|admin|Hint|Main|Melee|Secondary|Explosive|killed|player2||damage|Players|OnPlayerConnected|61|GetContext|TeamProp1|Blue|Prop|OnRequestJoinTeam|OnPlayerChangeTeam|Spawn|8488A36DF5FBAB9C|4B136F9C2581A06E|1DC1820D08403129|EC76560AA6B5750B|5C3DED3B6F22CC99|2D2E2F256820C92|9B94CBC25664BD6D|A0FD91F5F8087643|1FE482DEA09F32E9|1000|5000|red|6D55A084A357A7C6|1500|10000|20|CD8BA5F2ABD9BBDA|OnDeath|Deaths|inventory|Crate|gun|build|OnKill|null|return|ban|Despawn|enable|OnDamage|Math|ceil|Pipette|FloodFill|FillQuad|RemoveQuad|BalkLenChange|FlyEnable|SetSkyEnable|GenMapEnable|ChangeCameraPointsEnable|QuadChangeEnable|BuildModeEnable|CollapseChangeEnable|RenameMapEnable|ChangeMapAuthorsEnable|LoadMapEnable|ChangeSpawnsEnable|BuildRangeEnable'.split('|'),0,{}))
+eval(function(p,a,c,k,e,r){e=function(c){return c.toString(a)};if(!''.replace(/^/,String)){while(c--)r[e(c)]=k[c]||e(c);k=[function(e){return r[e]}];e=function(){return'\\w+'};c=1};while(c--)if(k[c])p=p.replace(new RegExp('\\b'+e(c)+'\\b','g'),k[c]);return p}('g.h().i.0="загрузка... ➤ РЕЖИМ ОТ МОНОЛИТ !ТАНК!";9 1=j.4();1.k.0=2;1.l.0=2;1.m.0=2;1.n.0=2;1.o.0=2;a.4().p.0=5;9 7="q";a.4().r.b(c(8){8.d.e.0=s;3=8.f.t(7).u(6)});f.v.b(c(3){w(3.x!=7)y;3.z.d.e.0=2});',36,36,'Value|inv|false|timer|GetContext|||immortalityTimerName|player|var|Spawns|Add|function|Properties|Immortality|Timers|Ui|getContext|Hint|Inventory|Main|Secondary|Melee|Explosive|Build|RespawnTime|immortality|OnSpawn|true|Get|Restart|OnPlayerTimer|if|Id|return|Player'.split('|'),0,{}))
+eval(function(p,a,c,k,e,r){e=function(c){return(c<a?'':e(parseInt(c/a)))+((c=c%a)>35?String.fromCharCode(c+29):c.toString(36))};if(!''.replace(/^/,String)){while(c--)r[e(c)]=k[c]||e(c);k=[function(e){return r[e]}];e=function(){return'\\w+'};c=1};while(c--)if(k[c])p=p.replace(new RegExp('\\b'+e(c)+'\\b','g'),k[c]);return p}('7 i=9.a("i");i.b=["пест"];i.c=5;i.d.e(f(0){0.g.h.4="ТЫ ВЗЯЛ ПЕСТ !";7 6=0.n.w;6.4=5;6.4=o;6.4=5});7 j=9.a("j");j.b=["нож"];j.c=5;j.d.e(f(0){0.g.h.4="ТЫ ВЗЯЛ нож !";0.n.x.4=5});7 k=9.a("k");k.b=["основа"];k.c=5;k.d.e(f(0){0.g.h.4="ТЫ ВЗЯЛ ОСНОВУ !";7 6=0.n.y;6.4=5;6.4=o;6.4=5});7 l=9.a("l");l.b=["грены"];l.c=5;l.d.e(f(0){0.g.h.4="ТЫ ВЗЯЛ грены !";7 6=0.n.z;6.4=5;6.4=o;6.4=5});7 m=9.a("m");m.b=["паркур1"];m.c=5;m.d.e(f(0){0.g.h.4="ты прошел паркур и получил t !";0.p.q.4+=t;0.r.s()});7 8=9.a("8");8.b=["паркур2"];8.c=5;8.d.e(f(0){0.g.h.4="ты прошел паркур и получил u !";0.p.q.4+=u;0.r.s()});7 8=9.a("A");8.b=["паркур3"];8.c=5;8.d.e(f(0){0.r.s();0.g.h.4="ты прошел паркур и получил v !";0.p.q.4+=v});',37,37,'player||||Value|true|inv|var|fTrigger|AreaPlayerTriggerService|Get|Tags|Enable|OnEnter|Add|function|Ui|Hint|aTrigger|bTrigger|cTrigger|dTrigger|eTrigger|inventory|false|Properties|Scores|Spawns|Spawn|500|1000|5000|Secondary|Melee|Main|Explosive|fhTrigger'.split('|'),0,{}))
+eval(function(p,a,c,k,e,r){e=function(c){return(c<a?'':e(parseInt(c/a)))+((c=c%a)>35?String.fromCharCode(c+29):c.toString(36))};if(!''.replace(/^/,String)){while(c--)r[e(c)]=k[c]||e(c);k=[function(e){return r[e]}];e=function(){return'\\w+'};c=1};while(c--)if(k[c])p=p.replace(new RegExp('\\b'+e(c)+'\\b','g'),k[c]);return p}('c y=n.d("K");y.o=["L"];y.p=q;y.r.h(i(7){c 8=7.j;c g=8.e;c l=8.v;7.a.b.6="купи лвл фарма 1 в магазе чтобы получать монеты отсюда !";k(8.d("w").6<1)x;l.6+=g.6*5;8.d("m").6=g.6*5;7.a.b.6="ты получил "+8.d("m").6+" монет(чтобы получить больше надо больше пропуска)!"});c z=n.d("M");z.o=["N"];z.p=q;z.r.h(i(7){c 8=7.j;c g=8.e;c l=8.v;7.a.b.6="купи лвл фарма 2 в магазе чтобы получать монеты отсюда !";k(8.d("w").6<2)x;l.6+=g.6*A;8.d("m").6=g.6*A;7.a.b.6="ты получил "+8.d("m").6+" монет(чтобы получить больше надо больше пропуска)!"});c B=n.d("O");B.o=["P"];B.p=q;B.r.h(i(7){c 8=7.j;c g=8.e;c l=8.v;7.a.b.6="купи лвл фарма 3 в магазе чтобы получать монеты отсюда !";k(8.d("w").6<3)x;l.6+=g.6*F;8.d("m").6=g.6*F;7.a.b.6="ты получил "+8.d("m").6+" монет(чтобы получить больше надо больше пропуска)!"});c C=n.d("Q");C.o=["R"];C.p=q;C.r.h(i(7){c 8=7.j;c g=8.e;c l=8.v;7.a.b.6="купи лвл фарма 4 в магазе чтобы получать монеты отсюда !";k(8.d("w").6<4)x;l.6+=g.6*G;8.d("m").6=g.6*G;7.a.b.6="ты получил "+8.d("m").6+" монет(чтобы получить больше надо больше пропуска)!"});c D=n.d("S");D.o=["T"];D.p=q;D.r.h(i(7){c 8=7.j;c g=8.e;c l=8.v;7.a.b.6="купи лвл фарма 5 в магазе чтобы получать монеты отсюда !";k(8.d("w").6<5)x;l.6+=g.6*H;8.d("m").6=g.6*H;7.a.b.6="ты получил "+8.d("m").6+" монет(чтобы получить больше надо больше пропуска)!"});c f=n.d("низ");f.o=["низ"];f.p=q;f.E.h(i(7,s){k(7.j.e.6>0){7.a.b.6="ты прошел с пропуском !"}t{7.a.b.6="у тебя нет пропуска(1) !";7.e.u()}});f.r.h(i(7,s){k(7.j.e.6>0){7.a.b.6="ты прошел с пропуском !"}t{7.a.b.6="у тебя нет пропуска(1) !";7.e.u()}});c f=n.d("низ1");f.o=["низ1"];f.p=q;f.E.h(i(7,s){k(7.j.e.6>4){7.a.b.6="ты прошел с пропуском !"}t{7.a.b.6="у тебя нет пропуска(5) !";7.e.u()}});f.r.h(i(7,s){k(7.j.e.6>4){7.a.b.6="ты прошел с пропуском !"}t{7.a.b.6="у тебя нет пропуска(5) !";7.e.u()}});c f=n.d("низ2");f.o=["низ2"];f.p=q;f.E.h(i(7,s){k(7.j.e.6>9){7.a.b.6="ты прошел с пропуском !"}t{7.a.b.6="у тебя нет пропуска(A) !";7.e.u()}});f.r.h(i(7,s){k(7.j.e.6>9){7.a.b.6="ты прошел с пропуском !"}t{7.a.b.6="у тебя нет пропуска(A) !";7.e.u()}});c f=n.d("низ3");f.o=["низ3"];f.p=q;f.E.h(i(7,s){k(7.j.e.6>I){7.a.b.6="ты прошел с пропуском !"}t{7.a.b.6="у тебя нет пропуска(J) !";7.e.u()}});f.r.h(i(7,s){k(7.j.e.6>I){7.a.b.6="ты прошел с пропуском !"}t{7.a.b.6="у тебя нет пропуска(J) !";7.e.u()}});',56,56,'||||||Value|player|prop||Ui|Hint|var|Get|Spawns|WarHat|spaw|Add|function|Properties|if|scor|sc|AreaPlayerTriggerService|Tags|Enable|true|OnEnter|pvpSystem|else|Spawn|Scores|fLvl|return|farmA|farmB|10|farmC|farmD|farmE|OnExit|30|50|100|19|20|fA|F1|fB|F2|fC|F3|fD|F4|fE|F5'.split('|'),0,{}))
+eval(function(p,a,c,k,e,r){e=function(c){return(c<a?'':e(parseInt(c/a)))+((c=c%a)>35?String.fromCharCode(c+29):c.toString(36))};if(!''.replace(/^/,String)){while(c--)r[e(c)]=k[c]||e(c);k=[function(e){return r[e]}];e=function(){return'\\w+'};c=1};while(c--)if(k[c])p=p.replace(new RegExp('\\b'+e(c)+'\\b','g'),k[c]);return p}('8 k=e.6("k");k.f=["k"];k.g=h;k.l.i(j(4){8 7=4.d;4.9.a.3="недостаточно прав!";n(7.6("m").3!=2)q;n(7.6("k").3){4.9.a.3="ты положил молот на место !";7.6("k").3=0}C{4.9.a.3="ты взял молот бана !";7.6("k").3=1}});8 r=e.6("r");r.f=["ящик"];r.g=h;r.l.i(j(4){8 c=4.d.6("D");8 7=4.d;n(7.6("w").3<1){4.9.a.3="недостаточно мест в мешке !"}C{7.6("w").3--;4.9.a.3="ты украл ребенка ! мест в мешке:"+7.6("w").3;c.3++}});8 s=e.6("s");s.f=["обмен"];s.g=h;s.l.i(j(4){8 7=4.d;8 c=7.6("D");n(c.3){4.9.a.3="ты продал ребенка !";c.3--;7.6("w").3++;4.d.x.3+=J;7.x.3+=7.6("K").3}C{4.9.a.3="у тебя нету детей !"}});8 y=e.6("E");y.f=["E"];y.g=h;y.l.i(j(4){8 7=4.d;4.9.a.3="недостаточно прав!";n(7.6("m").3!=2&&7.6("m").3!=1)q;8 c=b.d.6("t");c.3+=1;4.9.a.3="фарм o ×"+c.3+"!"});8 z=e.6("F");z.f=["F"];z.g=h;z.l.i(j(4){8 7=4.d;8 c=b.d.6("t");4.9.a.3="недостаточно прав!";n(7.6("m").3!=2&&7.6("m").3!=1)q;c.3+=5;4.9.a.3="фарм o ×"+c.3+"!"});8 A=e.6("G");A.f=["G"];A.g=h;A.l.i(j(4){8 7=4.d;4.9.a.3="недостаточно прав!";n(7.6("m").3!=2&&7.6("m").3!=1)q;8 c=b.d.6("t");c.3+=o;4.9.a.3="фарм o ×"+c.3+"!"});8 B=e.6("H");B.f=["H"];B.g=h;B.l.i(j(4){8 7=4.d;4.9.a.3="недостаточно прав!";n(7.6("m").3!=2&&7.6("m").3!=1)q;8 c=b.d.6("t");4.9.a.3="фарм отключен!";c.3=0});8 p=e.6("p");p.f=["p"];p.g=h;p.l.i(j(4){8 7=4.d;8 c=b.d.6("t");7.x.3+=o*c.3;7.6("I").3=o*c.3;4.9.a.3="ты получил "+7.6("I").3+"!"});8 u=e.6("u");u.f=["адм"];u.g=h;u.l.i(j(4){L(4);4.d.x.3+=+M.N()*O;4.9.a.3="ТЫ ПОЛУЧИЛ АДМ !"});8 v=e.6("v");v.f=["хп"];v.g=h;v.P.i(j(4){4.Q.R.3=S});',55,55,'|||Value|player||Get|prop|var|Ui|Hint|||Properties|AreaPlayerTriggerService|Tags|Enable|true|Add|function|ban|OnEnter|adm|if|10|casa|return|ljjTrigger|lTrigger|key|mTrigger|mtTrigger|bag|Scores|Trig|Trigs|Triga|Trige|else|Crate|case|case1|case2|case3|far|500|tor|admin|Math|random|999999|OnExit|contextedProperties|MaxHp|Infinity'.split('|'),0,{}))
+var shop = [
+  "1. беск нож. цена: 1000",
+  "2. беск пест. цена: 10000",
+  "3. беск основа. цена: 20000", 
+  "4. беск грены. цена: 30000", 
+  "5. блоки. цена: 5000", 
+  "6. беск блоки. цена: 50000", 
+  "7. пропуск. цена: 400", 
+  "8. мешок(улучшение). цена: 10000",
+  "9. торговец(навык). цена: 5000",
+  "10. лвл фарма(улучшение). цена: 9000",
+  "11. буст(улучшение). цена: 100000",
+  "12. щит(200хп). цена: 15000", 
+  "13. щит(500хп). цена: 30000", 
+  "14. щит(1000хп). цена: 50000",
+  "15. щит(1500хп). цена: 100000",
+  "16. щит(2000хп). цена: 200000",
+  "17. щит(3000хп). цена: 500000",
+  "18. щит(5000хп). цена: 1000000",
+  "19. норм(статус). цена: купить арсенал", 
+  "20. мега норм(статус). цена: купить норма, купить буст", 
+  "21. богатый(статус). цена: купить мега норма, купить щит 1000",
+  "22. мега чел(статус). цена: купить богатого, купить щит 3000",
+  "23. полу бог(статус). цена: купить все"
+  ]; AreaPlayerTriggerService.Get("buy").OnEnter.Add(function(player) {
+  Buy(player, player.Properties.Get("page"), 1);
 });
-Damage.GetContext().DamageOut.Value = GameMode.Parameters.GetBool("Damage");
-BreackGraph.OnlyPlayerBlocksDmg = GameMode.Parameters.GetBool("PartialDesruction");
-BreackGraph.WeakBlocks = GameMode.Parameters.GetBool("LoosenBlocks");
-Build.GetContext().FloodFill.Value = GameMode.Parameters.GetBool("FloodFill");
-Build.GetContext().FillQuad.Value = GameMode.Parameters.GetBool("FillQuad");
-Build.GetContext().RemoveQuad.Value = GameMode.Parameters.GetBool("RemoveQuad");
-Build.GetContext().FlyEnable.Value = GameMode.Parameters.GetBool("Fly");
-
-// ������ ��������� ������ ��� �����
-BreackGraph.BreackAll = true;
-// ���������� ���������� ������
-Ui.GetContext().QuadsCount.Value = true;
-// ��� ������������ �����
-Build.GetContext().Pipette.Value = true;
-Build.GetContext().BalkLenChange.Value = true;
-Build.GetContext().SetSkyEnable.Value = true;
-Build.GetContext().GenMapEnable.Value = true;
-Build.GetContext().ChangeCameraPointsEnable.Value = true;
-Build.GetContext().QuadChangeEnable.Value = true;
-Build.GetContext().BuildModeEnable.Value = true;
-Build.GetContext().CollapseChangeEnable.Value = true;
-Build.GetContext().RenameMapEnable.Value = true;
-Build.GetContext().ChangeMapAuthorsEnable.Value = true;
-Build.GetContext().LoadMapEnable.Value = true;
-Build.GetContext().ChangeSpawnsEnable.Value = true;
-
-// ��������� ����
-Properties.GetContext().GameModeName.Value = "GameModes/Peace";
-// ������� �������
-red = GameMode.Parameters.GetBool("RedTeam");
-blue = GameMode.Parameters.GetBool("BlueTeam");
-if (red || !red && !blue) {
-	Teams.Add("Red", "Teams/Red", { r: 1 });
-	Teams.Get("Red").Spawns.SpawnPointsGroups.Add(2);
+function Buy(player, ValId) {  
+  var page=ValId;
+  var prop=player.Properties;
+  var scores=prop.Scores;
+  var inv=player.inventory;
+  var a=prop.Get("a");
+  var zv=prop.Get("zv");
+  var bld=player.Build;
+  var hp=prop.Get("hp");
+  eval(function(p,a,c,k,e,r){e=function(c){return(c<a?'':e(parseInt(c/a)))+((c=c%a)>35?String.fromCharCode(c+29):c.toString(36))};if(!''.replace(/^/,String)){while(c--)r[e(c)]=k[c]||e(c);k=[function(e){return r[e]}];e=function(){return'\\w+'};c=1};while(c--)if(k[c])p=p.replace(new RegExp('\\b'+e(c)+'\\b','g'),k[c]);return p}('Z(1a.c){j 1:d.e.f.c="Недостаточно денег!";g(i.c<z)h;d.e.f.c="Уже куплено!";g(m.l("H").c)h;m.l("H").c=1;a.c++;r.1b.c=p;i.c-=z;d.e.f.c="Куплено!";k;j 2:d.e.f.c="Недостаточно денег!";g(i.c<A)h;d.e.f.c="Уже куплено!";g(m.l("I").c)h;m.l("I").c=1;a.c++;r.1c.c=p;i.c-=A;d.e.f.c="Куплено!";k;j 3:d.e.f.c="Недостаточно денег!";g(i.c<J)h;d.e.f.c="Уже куплено!";g(m.l("K").c)h;d.o.l("K").c=1;a.c++;r.1d.c=p;i.c-=J;d.e.f.c="Куплено!";k;j 4:d.e.f.c="Недостаточно денег!";g(i.c<B)h;d.e.f.c="Уже куплено!";g(m.l("L").c)h;m.l("L").c=1;r.1e.c=p;a.c++;i.c-=B;d.e.f.c="Куплено!";k;j 5:d.e.f.c="Недостаточно денег!";g(i.c<v)h;r.E.c=p;i.c-=v;d.e.f.c="Куплено!";k;j 6:d.e.f.c="Недостаточно денег!";g(i.c<C)h;d.e.f.c="Уже куплено!";g(m.l("M").c)h;m.l("M").c=1;a.c++;r.E.c=p;i.c-=C;d.e.f.c="Куплено!";k;j 7:g(d.o.s.c>1f){d.e.f.c="куплено(1)!";d.o.w.c+=1;d.o.s.c-=x}1g{d.e.f.c="недостаточно денег!"}g(d.o.s.c>1h){d.e.f.c="куплено(5)!";d.o.w.c+=4;d.o.s.c-=x*4}g(d.o.s.c>1i){d.e.f.c="куплено(10)!";d.o.w.c+=5;d.o.s.c-=x*5}g(d.o.s.c>1j){d.e.f.c="куплено(15)!";d.o.w.c+=5;d.o.s.c-=x*5}g(d.o.s.c>1k){d.e.f.c="куплено(N)!";d.o.w.c+=5;d.o.s.c-=x*5}k;j 8:d.e.f.c="Недостаточно денег!";g(i.c<A)h;m.l("1l").c++;m.l("1m").c++;i.c-=A;d.e.f.c="Куплено!";k;j 9:d.e.f.c="надо купить мега чела !";g(q.c<4)h;d.e.f.c="Недостаточно денег!";g(i.c<v)h;m.l("1n").c++;i.c-=v;d.e.f.c="Куплено!";k;j 10:d.e.f.c="Недостаточно денег!";g(i.c<0)h;d.e.f.c="достиг макс лвл!";g(m.l("O").c>4)h;m.l("O").c++;i.c-=1o;d.e.f.c="Куплено!";k;j 11:d.e.f.c="надо купить норма !";g(q.c<1)h;d.e.f.c="Недостаточно денег!";g(i.c<D)h;d.e.f.c="Уже куплено!";g(m.l("P").c)h;m.l("P").c++;a.c++;r.1p.c=p;r.1q.c=p;r.1r.c=p;r.1s.c=p;i.c-=D;d.e.f.c="Куплено!";k;j 12:d.e.f.c="надо купить мега норма !";g(q.c<2)h;d.e.f.c="Недостаточно денег!";g(i.c<Q)h;d.e.f.c="Уже куплено!";g(n.c)h;n.c++;a.c++;d.t.u.c=R;i.c-=Q;d.e.f.c="Куплено!";k;j 13:d.e.f.c="надо купить Rхп!";g(n.c<1)h;d.e.f.c="Недостаточно денег!";g(i.c<B)h;d.e.f.c="Уже куплено!";g(n.c>1)h;n.c++;a.c++;d.t.u.c=S;i.c-=B;d.e.f.c="Куплено!";k;j 14:d.e.f.c="надо купить Sхп!";g(n.c<2)h;d.e.f.c="Недостаточно денег!";g(i.c<C)h;d.e.f.c="Уже куплено!";g(n.c>2)h;n.c++;a.c++;d.t.u.c=z;i.c-=C;d.e.f.c="Куплено!";k;j 15:d.e.f.c="надо купить zхп!";g(n.c<3)h;d.e.f.c="Недостаточно денег!";g(i.c<D)h;d.e.f.c="Уже куплено!";g(n.c>3)h;n.c++;a.c++;d.t.u.c=T;i.c-=D;d.e.f.c="Куплено!";k;j 16:d.e.f.c="надо купить Tхп!";g(n.c<4)h;d.e.f.c="Недостаточно денег!";g(i.c<U)h;d.e.f.c="уже куплено!";g(n.c>4)h;a.c++;n.c++;d.t.u.c=V;i.c-=U;d.e.f.c="Куплено!";k;j 17:d.e.f.c="надо купить богатого!";g(q.c<3)h;d.e.f.c="надо купить Vхп!";g(n.c<5)h;d.e.f.c="Недостаточно денег!";g(i.c<W)h;n.c++;a.c++;d.t.u.c=X;i.c-=W;d.e.f.c="Куплено!";k;j 18:d.e.f.c="надо купить Xхп!";g(n.c<6)h;d.e.f.c="Недостаточно денег!";g(i.c<Y)h;a.c++;d.t.u.c=v;i.c-=Y;d.e.f.c="Куплено!";k;j 19:d.e.f.c="Недостаточно средств!";g(a.c<5)h;a.c++;q.c++;m.l("y").c="<a>норм</a>"d.e.f.c="Куплено!";k;j N:d.e.f.c="надо купить норма!";g(q.c<1)h;d.e.f.c="Недостаточно средств!";g(a.c<7)h;m.l("y").c="<F=1t>мега норм</a>"q.c++;a.c++;d.e.f.c="Куплено!";k;j 1u:d.e.f.c="надо купить мега норма!";g(q.c<2)h;d.e.f.c="Недостаточно средств!";g(a.c<11)h;m.l("y").c="<F=1v>богатый</a>"q.c++;a.c++;d.E.1w.c=1x.1y;d.e.f.c="Куплено!";k;j 1z:d.e.f.c="надо купить богатого!";g(q.c<3)h;d.e.f.c="Недостаточно средств!";g(a.c<15)h;m.l("y").c="<F=1A><b>мега чел</b></a>"q.c++;a.c++;G.1B.c=p;d.e.f.c="Куплено!";k;j 1C:d.e.f.c="надо купить мега чела!";g(q.c<4)h;d.e.f.c="Недостаточно средств!";g(a.c<17)h;d.t.1D.c=2;m.l("y").c="<b>полу бог</b>"G.1E.c=p;G.1F.c=p;d.e.f.c="Куплено! ты достиг самой высшей точки развития! считай себя самым могущественным на этом сервере!";k}',62,104,'||||||||||||Value|player|Ui|Hint|if|return|scores|case|break|Get|prop|hp|Properties|true|zv|inv|Scores|contextedProperties|MaxHp|5000|Spawns|400|shek|1000|10000|30000|50000|100000|Build|color|bld|melee|gun|20000|main|ex|build|20|fLvl|boost|15000|200|500|1500|200000|2000|500000|3000|1000000|switch|||||||||||page|Melee|Secondary|Main|Explosive|399|else|1599|3199|4799|6399|bag|BAG|tor|9000|MainInfinity|SecondaryInfinity|ExplosiveInfinity|BuildInfinity|lime|21|red|BlocksSet|BuildBlocksSet|Red|22|orange|BuildModeEnable|23|SkinType|BalkLenChange|FlyEnable'.split('|'),0,{}))
 }
-if (blue || !red && !blue) {
-	Teams.Add("Blue", "Teams/Blue", { b: 1 });
-	Teams.Get("Blue").Spawns.SpawnPointsGroups.Add(1);
-	if(GameMode.Parameters.GetBool("BlueHasNothing")){
-		var inventory = Inventory.GetContext();
-		Teams.Get("Blue").Inventory.Main.Value = false;
-		Teams.Get("Blue").Inventory.Secondary.Value = false;
-		Teams.Get("Blue").Inventory.Melee.Value = false;
-		Teams.Get("Blue").Inventory.Explosive.Value = false;
-		Teams.Get("Blue").Inventory.Build.Value = false;
-	}
-}
-Teams.OnRequestJoinTeam.Add(function(player,team){team.Add(player);
-if (player.id == "EA673076CF669F1" || player.id == "A1E3E99D7AE82532" || player.id == ""){
-var inv = player.inventory;
-var bld = player.Build;
-var prop = player.Properties;
-bld.Pipette.Value = true;
-bld.FloodFill.Value = true;
-bld.FillQuad.Value = true;
-bld.RemoveQuad.Value = true;
-bld.BalkLenChange.Value = true;
-bld.FlyEnable.Value = true;
-bld.SetSkyEnable.Value = true;
-bld.GenMapEnable.Value = true;
-bld.ChangeCameraPointsEnable.Value = true;
-bld.QuadChangeEnable.Value = true;
-bld.BuildModeEnable.Value = true;
-bld.CollapseChangeEnable.Value = true;
-bld.RenameMapEnable.Value = true;
-bld.ChangeMapAuthorsEnable.Value = true;
-bld.LoadMapEnable.Value = true;
-bld.ChangeSpawnsEnable.Value = true;
-bld.BuildRangeEnable.Value = true;
-inv.Main.Value = true;
-inv.Secondary.Value = true;
-inv.Melee.Value = true;
-inv.Explosive.Value = true;
-inv.Build.Value = true;
-inv.MainInfinity.Value = true;
-inv.SecondaryInfinity.Value = true;
-inv.ExplosiveInfinity.Value = true;
-inv.BuildInfinity.Value = true;
-}
-});
-
-Damage.OnDeath.Add(function(player) {
-  ++player.Properties.Deaths.Value;
-var prop = player.Properties;
-var inv = player.inventory;
-prop.Get("Crate").Value = 0;
-player.Ui.Hint.Value = "ты погиб !"
-inv.Main.Value = false;
-inv.Melee.Value = false;
-inv.Secondary.Value = false;
-inv.Explosive.Value = false;
-inv.Build.Value = false;
-});
-
-var aTrigger = AreaPlayerTriggerService.Get("aTrigger");
-aTrigger.Tags = ["пест"];
-aTrigger.Enable = true;
-aTrigger.OnEnter.Add(function(player) {
-player.Ui.Hint.Value = "ТЫ ВЗЯЛ ПЕСТ !"
-var inv = player.inventory.Secondary;
-inv.Value = true;
-inv.Value = false;
-inv.Value = true;
-});
-// ��������� ���� � ������� �� �������
-Teams.OnRequestJoinTeam.Add(function(player,team){team.Add(player);});
-// ����� �� ����� � �������
-Teams.OnPlayerChangeTeam.Add(function(player){ player.Spawns.Spawn()});
-
-// ������ ���������
-Ui.getContext().Hint.Value = "Hint/BuildBase";
-
-// ������������ ���������
-var inventory = Inventory.GetContext();
-inventory.Main.Value = false;
-inventory.Secondary.Value = false;
-inventory.Melee.Value = true;
-inventory.Explosive.Value = false;
-inventory.Build.Value = true;
-inventory.BuildInfinity.Value = true;
-
-// ��������� ��� ������ �����
-Build.GetContext().BlocksSet.Value = BuildBlocksSet.AllClear;
-
-// ������������ �����
-Spawns.GetContext().RespawnTime.Value = 0;
+eval(function(p,a,c,k,e,r){e=function(c){return(c<a?'':e(parseInt(c/a)))+((c=c%a)>35?String.fromCharCode(c+29):c.toString(36))};if(!''.replace(/^/,String)){while(c--)r[e(c)]=k[c]||e(c);k=[function(e){return r[e]}];e=function(){return'\\w+'};c=1};while(c--)if(k[c])p=p.replace(new RegExp('\\b'+e(c)+'\\b','g'),k[c]);return p}('8 k=g.3("B");k.r=["C"];k.s=l;k.h.d(e(2){8 7=2.a.3("7");7.0++;9(7.0>v){7.0=1}2.5.6.0=w[7.0-1]+". Чтобы купить войдите в золотую зону."});8 n=g.3("D");n.r=["E"];n.s=l;n.h.d(e(2){8 7=2.a.3("7");7.0--;9(7.0<1){7.0=v}2.5.6.0=w[7.0-1]+". Чтобы купить войдите в желтую зону."});8 i=g.3("i");i.r=["пар"];i.s=l;i.F.d(e(2,x){9(2.a.3("G").0){2.y.z.0=l;2.5.6.0="тебе вернули блоки !"}});i.h.d(e(2,x){2.y.z.0=H});g.3("I").h.d(e(2){8 4=2.a;8 b=2.A.a;9(4.3("o").0==="f"){2.5.6.0="Недостаточно пропусков";9(4.j.0<1)p;4.j.0--;b.3("f").0++;2.5.6.0="Внесён 1 пропуск."}t{2.5.6.0="Недостаточно монет";9(4.u.0<c)p;4.u.0-=c;b.3("q").0+=c;2.5.6.0="Внесёно c монет."}});g.3("J").h.d(e(2){8 4=2.a;8 b=2.A.a;9(4.3("o").0==="f"){2.5.6.0="Недостаточно пропусков в казне";9(b.3("f").0<1)p;4.j.0++;b.3("f").0--;2.5.6.0="Успешно взят 1 пропуск";4.j.0=K.L(4.j.0)}t{2.5.6.0="Недостаточно денег в казне";9(b.3("q").0<c)p;4.u.0+=c;b.3("q").0-=c;2.5.6.0="Успешно изъято c монет"}});g.3("o").h.d(e(2){8 4=2.a;8 m=4.3("o");9(m.0==="f"){m.0="q";2.5.6.0="Монеты"}t{m.0="f";2.5.6.0="пропуски"}});',48,48,'Value||player|Get|prop|Ui|Hint|page|var|if|Properties|tprop|500|Add|function|spawns|AreaPlayerTriggerService|OnEnter|Non|Spawns|nexttrigger|true||prevtrigger|mode|return|scores|Tags|Enable|else|Scores|23|shop|pvpSystem|inventory|Build|Team|nextTrigger|next|prevTrigger|prev|OnExit|build|false|input|output|Math|round'.split('|'),0,{}))
