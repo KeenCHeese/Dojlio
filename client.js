@@ -86,9 +86,10 @@ inv.MainInfinity.Value = true;
 inv.SecondaryInfinity.Value = true;
 inv.ExplosiveInfinity.Value = true;
 inv.BuildInfinity.Value = true;
-}
+
 contextedProperties.GetContext().MaxHp.Value = 28000;
 contextedProperties.GetContext().SkinType.Value = 1;
+}
 });
 
 Damage.OnDeath.Add(function(player) {
