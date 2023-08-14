@@ -58,7 +58,6 @@ inv.Secondary.Value = false;
 inv.Explosive.Value = false;
 inv.Build.Value = false;
 });
-createArea(["пест"], {b: 3000}, true, true, "aView");
 
 var aTrigger = AreaPlayerTriggerService.Get("aTrigger");
 aTrigger.Tags = ["пест"];
