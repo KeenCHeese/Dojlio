@@ -129,7 +129,8 @@ Build.GetContext().ChangeMapAuthorsEnable.Value = false;
 Build.GetContext().LoadMapEnable.Value = false; 
 Build.GetContext().ChangeSpawnsEnable.Value = false; 
  
-// ��������� ���� 
+// ��������� ����
+
 Properties.GetContext().GameModeName.Value = "GameModes/Peace"; 
 // ������� ������� 
 white = GameMode.Parameters.GetBool("WhiteTeam");
@@ -213,245 +214,25 @@ OTrigger.Tags = ["name"];
 OTrigger.Enable = true;
 OTrigger.OnEnter.Add(function (player) { player.Ui.Hint.Value = "твой ник:"+player;
  });
+// ��������� ���� � ������� �� �������
+Teams.OnRequestJoinTeam.Add(function(player,team){team.Add(player);});
+// ����� �� ����� � �������
+Teams.OnPlayerChangeTeam.Add(function(player){ player.Spawns.Spawn()});
 
-var sAreaTag = "бум";
-var ViewsParametersName = "Vivew1";
-var sAreas = AreaService.GetByTag(sAreaTag);
-var sView = AreaViewService.GetContext().Get("sView17");
-sView.Color = {r:3000};
-sView.Tags = [sAreaTag];
-sView.Enable = true;
-var sTrigger = AreaPlayerTriggerService.Get("sTrigger17");
-sTrigger.Tags = [sAreaTag];
-sTrigger.Enable = true;
-sTrigger.OnEnter.Add(function (player) {
-if(player.Team !== Teams.Get("Blue")){
-player.Ui.Hint.Value = "ты должен ее защитить !";
-SetGameMode();
-}else{player.Ui.Hint.Value = "ты активировал боеголовку";
-}
-});
+// ������ ���������
+Ui.getContext().Hint.Value = "Hint/BuildBase";
 
-var sAreaTag = "бум2";
-var ViewsParametersName = "Vivew18";
-var sAreas = AreaService.GetByTag(sAreaTag);
-var sView = AreaViewService.GetContext().Get("sView18");
-sView.Color = {r:3500};
-sView.Tags = [sAreaTag];
-sView.Enable = true;
-var sTrigger = AreaPlayerTriggerService.Get("sTrigger18");
-sTrigger.Tags = [sAreaTag];
-sTrigger.Enable = true;
-sTrigger.OnEnter.Add(function (player) {
-player.Ui.Hint.Value = "ТЫ ДЕЗАКТИВИРОВАЛ БОЕГОЛОВКУ";
-SetWaitingMode();
-});
+// ������������ ���������
+var inventory = Inventory.GetContext();
+inventory.Main.Value = false;
+inventory.Secondary.Value = false;
+inventory.Melee.Value = true;
+inventory.Explosive.Value = false;
+inventory.Build.Value = true;
+inventory.BuildInfinity.Value = true;
 
-var sAreaTag = "енд";
-var ViewsParametersName = "Vivew19";
-var sAreas = AreaService.GetByTag(sAreaTag);
-var sView = AreaViewService.GetContext().Get("sView19");
-sView.Color = {r:3000};
-sView.Tags = [sAreaTag];
-sView.Enable = true;
-var sTrigger = AreaPlayerTriggerService.Get("sTrigger19");
-sTrigger.Tags = [sAreaTag];
-sTrigger.Enable = true;
-sTrigger.OnEnter.Add(function (player) {
-if(player.Team !== Teams.Get("Red")){
-player.Ui.Hint.Value = "ты должен ее защитить !";
-}else{player.Ui.Hint.Value = "ты дезактивировал боеголовку";
-SetWaitingMode();
-}
-});
+// ��������� ��� ������ �����
+Build.GetContext().BlocksSet.Value = BuildBlocksSet.AllClear;
 
-var aTrigger = AreaPlayerTriggerService.Get("aTrigger");
-aTrigger.Tags = ["пист"];
-aTrigger.Enable = true;
-aTrigger.OnEnter.Add(function(player) {
-player.Ui.Hint.Value = "Ты Взял Пистолет !"
-var inv = player.inventory.Secondary;
-inv.Value = true;
-inv.Value = false;
-inv.Value = true;
-});
-
-var bTrigger = AreaPlayerTriggerService.Get("bTrigger");
-bTrigger.Tags = ["автом"];
-bTrigger.Enable = true;
-bTrigger.OnEnter.Add(function(player) {
-player.Ui.Hint.Value = "Ты Взял Автомат !"
-var inv = player.inventory.Main;
-inv.Value = true;
-inv.Value = false;
-inv.Value = true;
-});
-
-var yTrigger = AreaPlayerTriggerService.Get("yTrigger");
-yTrigger.Tags = ["10"];
-yTrigger.Enable = true;
-yTrigger.OnEnter.Add(function(player) {
-var sts = player.Properties.Get("pid").Value = "<B><color=lime>Негр</color></B>";   
-var skin = contextedProperties.GetContext(player).SkinType.Value = 1;
-var hp =
-contextedProperties.GetContext(player).MaxHp.Value = 1025;
-skin.Value = true;
-skin.Value = false;
-skin.Value = true;
-});
-
-var rTrigger = AreaPlayerTriggerService.Get("rTrigger");
-rTrigger.Tags = ["11"];
-rTrigger.Enable = true;
-rTrigger.OnEnter.Add(function(player) {
-player.Ui.Hint.Value = "Ты Non rp!"
-var adm = player.Build.FlyEnable.Value = true; 
-var adm = player.Properties.Get("pid").Value = 
-"<B><color=black>НОН_РП</color></B>";
-var adm = player.inventory.Main;
-adm.Value = true;
-adm.Value = false;
-adm.Value = true;
-})
-var updTrg = 
-AreaPlayerTriggerService.Get("UpdTrigger"); 
-updTrg.Tags = ["upd"]; 
-updTrg.Enable = true; 
-updTrg.OnEnter.Add(function(){ 
-list = []; 
-curenc = 0; 
-ato = 0; 
-var e = Players.GetEnumerator(); 
-while(e.moveNext()){ 
-list.push(e.Current); 
-} 
-}); 
-
-var choseTrg = AreaPlayerTriggerService.Get("ChoseTrigger"); 
-choseTrg.Tags = ["chose"]; 
-choseTrg.Enable = true; 
-choseTrg.OnEnter.Add(function(p){ 
-ato = list[curenc]; 
-p.Ui.Hint.Value="> "+ato; 
-if(curenc < (list.length - 1))curenc++; 
-else curenc = 0; 
-}); 
-
-var banTrg = AreaPlayerTriggerService.Get("BanTrigger") 
-banTrg.Tags = ["ban"]; 
-banTrg.Enable = true; 
-banTrg.OnEnter.Add(function(p){ 
-Ban(ato); 
-p.Ui.Hint.Value=ato+" Ты забанен "; 
-function Ban(player){ 
-p=player 
-p.Spawns.Spawn(); 
-p.Spawns.Despawn(); 
-p.Build.BuildRangeEnable.Value=false; 
-p.Ui.Hint.Value="you are banned"; 
-} 
-})
-
-VAreaTag = "тп";
-var VTrigger = AreaPlayerTriggerService.Get("VTrigger"); 
-VTrigger.Tags = [VAreaTag]; 
-VTrigger.Enable = true; 
-VTrigger.OnEnter.Add(function (player) {       
-Teams.Get("Red").Add(player);
-});
-
-DAreaTag = "ак";
-var DTrigger = AreaPlayerTriggerService.Get("DTrigger"); 
-DTrigger.Tags = [DAreaTag]; 
-DTrigger.Enable = true; 
-DTrigger.OnEnter.Add(function (player) {       
-Teams.Get("Blue").Add(player);
-});
-
-// задаем что выводить вверху 
-Ui.GetContext().TeamProp1.Value = { Team: "Blue", Prop: "Deaths" }; 
-Ui.GetContext().TeamProp2.Value = { Team: "Red", Prop: "Deaths" };
-
-// задаем макс смертей команд 
-var maxDeaths = "<B><color=Green>Повстанцы Хаоса</color></B>"; 
-Teams.Get("Red").Properties.Get("Deaths").Value = maxDeaths; 
-Teams.Get("Blue").Properties.Get("Deaths").Value = maxDeaths2 = "<B><color=Blue>Эпсилон 11</color></B>";
- 
-// ������ ��������� 
-Ui.getContext().Hint.Value = "<B><color=White>...</color></B>";
-
-//
-Teams.OnRequestJoinTeam.Add(function(player,team){team.Add(player);
-  if (player.id  == "EA673076CF669F"||player.id == ""||player.id == "5476D6FE9BCC1E6B"||player.id == "5476D6FE9BCC1E6B"||player.id == "5476D6FE9BCC1E6B"||player.id == "5476D6FE9BCC1E6B"||player.id == "5476D6FE9BCC1E6B")
-  {
-   player.Properties.Get("pid").Value = "<B><color=red>НОН_РП</color></B>";   
-  }                                
-});
-//
-Teams.OnRequestJoinTeam.Add(function(player,team){team.Add(player);
-
-player.Properties.Get("pid").Value = "<B><color=White>Player</color></B>";                                                                                   
-
-});
-Teams.OnRequestJoinTeam.Add(function(player,team){team.Add(player);
-
-player.Properties.Get("aa").Value = player.Id.slice(0,8) + "                                                                                     " + player.Id.slice(8,16);
-});
-// задаем что выводить в лидербордах
-LeaderBoard.PlayerLeaderBoardValues = [
- {
-  Value: "Kills",
-  DisplayName: "<B><color=red>Murders</color></B>",
-  ShortDisplayName: "<B><color=red>Murders</color></B>"
- },
- {
-  Value: "aa",
-  DisplayName: "<B><color=lime>ID</color></B>",
-  ShortDisplayName: "<B><color=lime>ID</color></B>"
- },
- {
-  Value: "pid",
-  DisplayName: "<B><color=orange>Status</color></B>",
-  ShortDisplayName: "<B><color=orange>Status</color></B>"
- },
- {
-  Value: "Scores",
-  DisplayName: "<B><color=yellow>Money</color></B>",
-  ShortDisplayName: "<B><color=yellow>Money</color></B>"
- }
-];
-LeaderBoard.TeamLeaderBoardValue = {
- Value: "Deaths",
- DisplayName: "Statistics\Deaths",
- ShortDisplayName: "Statistics\Deaths"
-};
-// счетчик убийств
-Damage.OnKill.Add(function(player, killed) {
- if (killed.Team != null && killed.Team != player.Team) {
-  ++player.Properties.Kills.Value;
-  player.Properties.Scores.Value += 500;
- }
-});
-
-// ����� �� ����� � ������� 
-Teams.OnPlayerChangeTeam.Add(function(player){ player.Spawns.Spawn();
-contextedProperties.GetContext().MaxHp.Value = 1000;
-});
- 
-// ������ ��������� 
-Ui.getContext().Hint.Value = "Hint/BuildBase"; 
-
-// ������������ ��������� 
-var inventory = Inventory.GetContext(); 
-inventory.Main.Value = false; 
-inventory.Secondary.Value = false; 
-inventory.Melee.Value = false; 
-inventory.Explosive.Value = false; 
-inventory.Build.Value = false; 
-inventory.BuildInfinity.Value = false; 
- 
-// ��������� ��� ������ ����� 
-Build.GetContext().BlocksSet.Value = BuildBlocksSet.AllClear; 
- 
-// ������������ ����� 
-Spawns.GetContext().RespawnTime.Value = 10;
+// ������������ �����
+Spawns.GetContext().RespawnTime.Value = 0;
