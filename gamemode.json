@@ -1,6 +1,6 @@
 {
-  "Name": "PEACE",
-  "Description": "Мирный режим",
+  "Name": "Scp",
+  "Description": "SCP режим",
   "StartClientVersion": 334,
   "MapLists": [
     {
