@@ -196,6 +196,75 @@ contextedProperties.GetContext(player).SkinType.Value = 2;
 }
 });
 
+//массив товаров и их цен 
+var shop = [ 
+  "1. Блоки. Цена: 500M", 
+]; 
+var cost = [500, ]; 
+ 
+//зона покупки товара 
+var buytrigger = AreaPlayerTriggerService.Get("buyTrigger"); 
+buytrigger.Tags = ["buy"]; 
+buytrigger.Enable = true; 
+buytrigger.OnEnter.Add(function(player) { 
+  Buy(player, player.Properties.Get("page"), 1); 
+}); 
+function Buy(player, ValId) {   
+  //объявление переменных для уменьшения веса режима 
+  var page = ValId; 
+  var prop = player.Properties; 
+  var tprop = player.Team.Properties; 
+  var inv = prop.Get("inv"); 
+  var scores = prop.Scores; 
+  var shekels = prop.Get("shek"); 
+  //основной код магазина 
+  switch(page.Value) { 
+    case 1: 
+      player.Ui.Hint.Value = "Недостаточно денег!"; 
+      if (scores.Value < cost[page.Value - 1] && free == 1) return;      
+      //сначала пишем в подсказку, что недостаточно денег 
+      //если денег достаточно, то выполняем действие 
+      player.Inventory.Build.Value = false; 
+      player.Inventory.Build.Value = true;       
+      //если значение free == 2, то не снимаем деньги (нужно для одного товара) 
+      if (free == 2) return;     
+      //снимаем деньги и пишем в подсказку, что товар куплен       
+      //у некоторых товаров еще есть одно условие, если товар уже куплен 
+      scores.Value -= cost[page.Value - 1]; 
+      player.Ui.Hint.Value = "Куплено!"; 
+      break; 
+  } 
+}
+
+//триггер зоны выбора товара (вперед по списку) 
+var nexttrigger = AreaPlayerTriggerService.Get("nextTrigger"); 
+nexttrigger.Tags = ["next"]; 
+nexttrigger.Enable = true; 
+nexttrigger.OnEnter.Add(function(player) { 
+  var page = player.Properties.Get("page"); 
+  page.Value++; 
+  if (page.Value > shop.length) { 
+    page.Value = 1; 
+  } 
+  player.Ui.Hint.Value = shop[page.Value - 1] + ". Чтобы купить войдите в жëлтую зону."; 
+}); 
+ 
+//подсказка xd  
+Ui.GetContext().Hint.Value = "Area Wars v1.3.1 by lain iwakura"; 
+ 
+//триггер зоны выбора товара (назад по списку) 
+var prevtrigger = AreaPlayerTriggerService.Get("prevTrigger"); 
+prevtrigger.Tags = ["prev"]; 
+prevtrigger.Enable = true; 
+prevtrigger.OnEnter.Add(function(player) { 
+  var page = player.Properties.Get("page"); 
+  page.Value--; 
+  if (page.Value < 1) { 
+    page.Value = shop.length; 
+  } 
+  player.Ui.Hint.Value = shop[page.Value - 1] + ". Чтобы купить войдите в жëлтую зону."; 
+});
+
 var t1trigger = AreaPlayerTriggerService.Get("t1trigger");
 t1trigger.Tags = ["t1"];
 t1trigger.Enable = true;
