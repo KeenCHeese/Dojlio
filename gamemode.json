@@ -1,1 +1,21 @@
+{
 
+  "Name": "название режима",
+
+  "Description": "описание режима",
+
+  "StartClientVersion": 334,
+  "ApiVersion": 2,
+
+  "MapLists": [
+
+    {
+
+      "MapListId": 324,
+
+      "Name": "название для карт"
+
+    }
+
+  ],
+}
