@@ -1,8 +1,8 @@
 {
 
-  "Name": "название режима",
+  "Name": "Testing Build",
 
-  "Description": "описание режима",
+  "Description": "the normal",
 
   "StartClientVersion": 334,
   "ApiVersion": 2,
